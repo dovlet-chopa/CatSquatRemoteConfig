@@ -13,6 +13,7 @@ public class ConverterSheetData : MonoBehaviour
     [Header("Enemy / Cat Stats Sheets Range")]
     [SerializeField] string enemyStats;
     [SerializeField] string catStats;
+    // Example GitHub
 
 
     private List<List<List<object>>> _levelSheetData = new List<List<List<object>>>();
