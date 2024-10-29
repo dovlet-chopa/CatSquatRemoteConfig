@@ -213,7 +213,7 @@ public class ConverterSheetData : MonoBehaviour
 
     #region Enemy/Cat Stats
 
-    public void InitializeEnemyStats(List<EnemyStatsInfo> enemiesList, Action<List<EnemyStatsInfo>> OnSuccess)
+    public void InitializeEnemyStats(List<EnemyStatsInfo> enemiesList, Action OnSuccess)
     {
         GoogleSheetRemoteConfig.Instance.LoadSheetData(enemyStats,
             result =>
@@ -235,7 +235,7 @@ public class ConverterSheetData : MonoBehaviour
                     }
                 }
 
-                OnSuccess?.Invoke(enemiesList);
+                OnSuccess?.Invoke();
             });
     }
 
