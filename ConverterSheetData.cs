@@ -33,7 +33,7 @@ public class ConverterSheetData : MonoBehaviour
         _completedCount++;
         if (_completedCount == _initializationCount)
         {
-            EventsManager.FireOnInitializeData();
+            EventsManager.FireOnDataInitialized();
         }
     }
 
